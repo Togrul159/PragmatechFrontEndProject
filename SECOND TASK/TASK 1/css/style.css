@@ -1,0 +1,101 @@
+* {
+  margin: 0%;
+  padding: 0%; }
+
+.row {
+  display: flex; }
+
+#Prewiev {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/bg_08.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  #Prewiev .navbar {
+    width: 1050px;
+    height: 120px;
+    margin-top: 55px;
+    margin-left: 115px;
+    background-color: #ffffff; }
+    #Prewiev .navbar .main-menu {
+      display: flex;
+      justify-content: space-between; }
+      #Prewiev .navbar .main-menu .menu-left {
+        display: flex; }
+        #Prewiev .navbar .main-menu .menu-left .navbar {
+          padding: 40px 45px 40px 0px; }
+          #Prewiev .navbar .main-menu .menu-left .navbar i {
+            font-size: 28px;
+            color: #222;
+            cursor: pointer; }
+        #Prewiev .navbar .main-menu .menu-left .logo {
+          padding: 35px  0px; }
+      #Prewiev .navbar .main-menu .menu-right {
+        display: flex; }
+        #Prewiev .navbar .main-menu .menu-right .main-navbar {
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+        #Prewiev .navbar .main-menu .menu-right i {
+          font-size: 13px;
+          margin-left: 10px; }
+        #Prewiev .navbar .main-menu .menu-right nav {
+          list-style: none;
+          display: flex; }
+        #Prewiev .navbar .main-menu .menu-right li {
+          padding: 42px 15px 42px 0px; }
+        #Prewiev .navbar .main-menu .menu-right a {
+          display: flex;
+          align-items: center;
+          text-decoration: none;
+          color: #222;
+          transition: 0.5s ease; }
+        #Prewiev .navbar .main-menu .menu-right li {
+          font-size: 16px;
+          border: none;
+          outline: none;
+          color: white;
+          padding: 14px 16px;
+          background-color: inherit;
+          font-family: 'Lato', sans-serif;
+          margin: 0; }
+        #Prewiev .navbar .main-menu .menu-right .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #ffffff;
+          min-width: 160px;
+          z-index: 1; }
+          #Prewiev .navbar .main-menu .menu-right .dropdown-content a {
+            float: none;
+            color: #5c5b5b;
+            padding: 8px 15px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+            font-size: 14px; }
+            #Prewiev .navbar .main-menu .menu-right .dropdown-content a:hover {
+              background-color: #ddd; }
+
+#Service {
+  height: 10vh; }
+  #Service .row {
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 60px; }
+    #Service .row .grid-item {
+      text-align: center; }
+      #Service .row .grid-item img {
+        margin: 40px 20px; }
+      #Service .row .grid-item h3 {
+        font-size: 20px;
+        color: #222; }
+      #Service .row .grid-item p {
+        font-size: 16px;
+        color: #434343;
+        line-height: 20px;
+        margin-top: 20px; }
+
+/*# sourceMappingURL=style.css.map */
