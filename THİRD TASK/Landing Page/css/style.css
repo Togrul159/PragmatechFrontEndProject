@@ -109,6 +109,7 @@
     border-radius: 5px;
     background-color: #000000;
     margin: auto;
+    margin-top: 26px;
 }
 .text-services p{
     font-weight: 300;
@@ -136,24 +137,34 @@
     gap: 34px;
 }
 .box-item{
-    width: 320px;
-    height: 300px;
+    width: 330px;
+    height: 325px;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
 }
+
+.box-item img{
+    position: relative;
+    top: 40px;
+    left: 40px;
+}
+
+.box-item .box-item-text{
+    margin-top: 55px;
+}
+
 .box-item h3{
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 56px;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 55px;
     color: #000000;
-    margin-top: 150px;
-    margin-left: 39px;
+    margin-left: 40px;
 }
 .box-item p{
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 25px;
     color: #7D7987;
     margin-left: 40px;
 }
@@ -274,3 +285,261 @@
     font-weight: bold;
 }
 /* Download */
+/* Customer */
+#Customer{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    margin-top: 266px;
+}
+.customer-box{
+    position: absolute;
+    top: 3788px;
+    left: 70px;
+}
+.customer-box img{
+    width: 100%;
+    height: 100%;
+}
+.customer-box-item{
+    position: relative;
+    top: 0%;
+    left: 240px;
+}
+.customer-box-item h1{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #fff;
+}
+.customer-box-item .line{
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 25px;
+}
+ #Customer .founder{
+    position: relative;
+    top: 107px;
+    left: 40px;
+    display: flex
+    
+}
+ #Customer .founder img{
+    border: 5px solid #fff;
+    border-radius: 50%;
+}
+ #Customer .founder h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 48px;
+    color: #fff;
+    margin-left: 29px;
+    margin-top: 30px;
+}
+ #Customer .founder p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 70px;
+    margin-left: -182px ;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+#Customer .founder-info p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 105px;
+    margin-left: 66px;
+    color: rgba(255, 255, 255, 0.85);
+}
+#Customer .scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:100px;
+}
+#Customer .scroll img{
+    width: 10px;
+    height: 10px;
+    margin: 18px;
+}
+#Customer .scroll .left{
+    width: 28px;
+    height: 18px;
+    margin-right:91px;
+}
+#Customer .scroll .right{
+    width: 28px;
+    height: 18px;
+    margin-left:91px;
+}
+
+/* Customer */
+/* Check Out */
+#Check-out{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 227px;
+}
+.check-text{
+    text-align: center;
+}
+.check-text h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 56px;
+    color: #000000;
+}
+.check-text .line{
+    width: 56px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #000000;
+    margin: auto;
+    margin-top: 26px;
+}
+.box-check-img{
+    position: absolute;
+    right: 0px;
+    top: 4637px;;
+}
+.box-check-img img{
+    width: 345px;
+    height: 380px;
+}
+.box-second{
+    margin-top:80px;
+    align-items: center;
+    display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 34px;
+}
+.check-box-item{
+    width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+}
+.check-box-item img{
+    width: 320px;
+    height: 200px;
+    border-radius: 20px 20px 0px 0px;
+}
+.check-box-item h3{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #000000;
+    margin-top: 30px;
+    text-align: left;
+    margin-left: 10px;
+}
+.check-box-item p{
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 12px;
+    color: #7D7987;
+}
+.check-box-item h2{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 28px;
+    color: #458FF6;
+    text-align: left;
+    margin-left: 10px;
+
+}
+
+.check-box .btn{
+    text-align: center;
+    margin-top: 69px;
+}
+.check-box .btn a{
+    text-decoration: none;
+    padding: 15px 30px;
+    border: 1.4px solid #458FF6;
+    box-sizing: border-box;
+    color: #458FF6;
+    border-radius: 55px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Check Out */
+/* Footer */
+footer{
+    width: 100%;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 200px;
+}
+.footer-container{
+    color: #fff;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 70px;
+    padding: 80px 0;
+}
+
+.footer-logo{
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+.footer-t-logo{
+    background-color: #fff;
+    color: #458FF6;
+    padding: 5px 13px;
+    border-radius: 50%;
+}
+.footer-t-logo h6{
+    font-size: 26px;
+    font-weight: 700;
+
+}
+.footer-t-logo p{
+    padding-left: 13px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+.footer-item h5{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 22px 0 31px 0;
+}
+.footer-item h1{
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.footer-item li{
+    list-style: none;
+    padding: 10px 0;
+}
+/* Footer */
