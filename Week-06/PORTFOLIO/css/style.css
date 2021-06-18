@@ -3,9 +3,12 @@ body {
   padding: 0%;
   font-family: 'Poppins', sans-serif; }
 
+html {
+  scroll-behavior: smooth; }
+
 #Navbar {
   width: 100%;
-  height: 120vh;
+  height: auto;
   background-image: url(../img/photo-1616004667892-d348f7349d39.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -15,38 +18,27 @@ body {
   #Navbar .overlay {
     position: absolute;
     width: 100%;
-    height: 148.9vh;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    top: -167px;
+    top: 0px;
+    left: 0px;
     z-index: -1; }
-  #Navbar .tm {
-    display: flex;
-    align-items: center; }
-    #Navbar .tm h1 {
-      width: 45px;
-      height: 40px;
+  #Navbar .mobil {
+    text-align: end; }
+    #Navbar .mobil i {
       color: #f8f8f8;
-      border: 4px solid #f8f8f8;
-      border-radius: 50%;
-      margin: auto;
-      margin-left: 575px;
-      text-align: center;
-      font-weight: 300; }
-    #Navbar .tm .mobil {
-      text-align: end; }
-      #Navbar .tm .mobil i {
+      font-size: 22px;
+      margin-right: 20px; }
+      #Navbar .mobil i span {
+        font-weight: 300;
         color: #f8f8f8;
-        font-size: 22px;
-        margin-right: 20px; }
-        #Navbar .tm .mobil i span {
-          font-weight: 300;
-          color: #f8f8f8;
-          font-size: 16px;
-          margin-left: 10px; }
+        font-size: 16px;
+        margin-left: 10px; }
   #Navbar .my-page {
     display: flex;
     align-items: center;
-    padding-top: 140px; }
+    padding-top: 120px;
+    padding-bottom: 60px; }
     #Navbar .my-page .title {
       padding-bottom: 50px; }
       #Navbar .my-page .title h2 {
@@ -67,11 +59,18 @@ body {
           background-color: #f8f8f8;
           color: black;
           text-decoration: none;
-          margin-top: 30px; }
+          margin-top: 30px;
+          transition: .4s all ease; }
+          #Navbar .my-page .title .my-btn .btn-works:hover {
+            background-color: #ad0606;
+            color: #f8f8f8; }
         #Navbar .my-page .title .my-btn .btn-contact {
           color: #f8f8f8;
           font-size: 20px;
-          margin-left: 30px; }
+          margin-left: 30px;
+          transition: .4s all ease; }
+          #Navbar .my-page .title .my-btn .btn-contact:hover {
+            color: #ad0606; }
           #Navbar .my-page .title .my-btn .btn-contact i {
             font-size: 20px;
             margin-left: 10px; }
@@ -82,7 +81,7 @@ body {
         border-right: 3px solid;
         font-weight: 700;
         font-size: 4.5em;
-        color: #f8f8f8;
+        color: #ad0606;
         animation: typing 2s steps(18), blink 0.5s step-end infinite alternate; }
 @keyframes typing {
   from {
@@ -96,18 +95,389 @@ body {
       #Navbar .my-page .title-img img {
         max-width: 75%;
         height: auto;
-        border: 5px solid #f8f8f8;
-        border-radius: 0% 100% 0% 99%/94% 81% 55% 56%; }
+        border: 4px solid #f8f8f8;
+        border-radius: 70% 27% 7% 64%/42% 60% 43% 56%; }
 
 #Myself {
   background: #1b1b1b;
   width: 100%;
-  height: 100vh; }
+  height: auto; }
   #Myself .my-self-title {
-    margin-top: 40px; }
+    text-align: center;
+    margin: auto; }
     #Myself .my-self-title h1 {
+      font-size: 2.5rem;
+      color: #f8f8f8;
       font-weight: 700;
-      font-size: 2.5em;
-      color: #f8f8f8; }
+      padding-bottom: 10px; }
+  #Myself .my-self {
+    width: 540px; }
+    #Myself .my-self h2 {
+      font-size: 2.5rem;
+      color: #f8f8f8;
+      font-weight: 700; }
+      #Myself .my-self h2 span {
+        color: #ad0606;
+        padding-bottom: 6px; }
+    #Myself .my-self p {
+      color: #f8f8f8;
+      font-size: 1.3rem;
+      font-weight: 300;
+      line-height: 1.9; }
+  #Myself .experiance {
+    text-align: end; }
+    #Myself .experiance h1 {
+      font-size: 190px;
+      color: #ad0606;
+      margin: 0%;
+      text-align: center; }
+    #Myself .experiance h5 {
+      color: #f8f8f8;
+      font-size: 25px;
+      margin: 0;
+      padding: 20px 20px; }
+  #Myself .my-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px; }
+    #Myself .my-information .info {
+      padding: 10px 25px; }
+      #Myself .my-information .info h4 {
+        font-size: 20px;
+        font-weight: 300;
+        color: #6c757d;
+        margin: 10px; }
+      #Myself .my-information .info span {
+        font-size: 15px;
+        font-weight: 400;
+        color: #f8f8f8; }
+
+#Resume {
+  width: 100%;
+  height: auto;
+  background-color: #f8f9f8;
+  padding-top: 50px; }
+  #Resume .my-resume-title {
+    text-align: center;
+    margin: auto; }
+    #Resume .my-resume-title h4 {
+      color: #f8f8f8;
+      background-color: #000000;
+      font-weight: 400;
+      border-radius: 5px; }
+    #Resume .my-resume-title h1 {
+      color: #000000;
+      font-size: 2.5rem;
+      font-weight: 700; }
+  #Resume .education-experience {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%; }
+    #Resume .education-experience .education {
+      border-left: 3px solid #ad0606; }
+      #Resume .education-experience .education h1 {
+        color: #000000;
+        font-size: 40px;
+        margin-left: 40px;
+        font-weight: 600; }
+      #Resume .education-experience .education .edu {
+        margin-left: 40px; }
+        #Resume .education-experience .education .edu h3 {
+          color: #575757;
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 2; }
+        #Resume .education-experience .education .edu h4 {
+          color: #000000;
+          font-size: 22px;
+          font-weight: 300; }
+        #Resume .education-experience .education .edu p {
+          color: #a0a2a3;
+          font-size: 18px;
+          line-height: 2;
+          font-weight: 300;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #a1a1a1; }
+    #Resume .education-experience .experience {
+      margin-left: 80px;
+      border-left: 3px solid #ad0606; }
+      #Resume .education-experience .experience h1 {
+        color: #000000;
+        font-size: 40px;
+        margin-left: 40px;
+        font-weight: 600; }
+      #Resume .education-experience .experience .exp {
+        margin-left: 40px; }
+        #Resume .education-experience .experience .exp h3 {
+          color: #575757;
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 2; }
+        #Resume .education-experience .experience .exp h4 {
+          color: #000000;
+          font-size: 22px;
+          font-weight: 300; }
+        #Resume .education-experience .experience .exp p {
+          color: #a0a2a3;
+          font-size: 18px;
+          line-height: 2;
+          font-weight: 300;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #a1a1a1; }
+  #Resume h1 {
+    color: #000000;
+    font-size: 40px;
+    margin-left: 40px;
+    font-weight: 600; }
+
+#Portfolio {
+  width: 100%;
+  height: auto;
+  background-color: #1b1b1b; }
+  #Portfolio .portfolio-title {
+    text-align: center;
+    margin: auto; }
+    #Portfolio .portfolio-title h4 {
+      margin: 0%;
+      padding-top: 40px;
+      color: #f8f8f8;
+      font-weight: 400;
+      font-size: 1.2rem; }
+    #Portfolio .portfolio-title h1 {
+      color: #f8f8f8;
+      font-size: 2.5rem;
+      font-weight: 700; }
+  #Portfolio .portfolio {
+    display: flex;
+    padding-bottom: 70px; }
+    #Portfolio .portfolio img {
+      width: 335px;
+      padding: 10px 10px;
+      margin: auto;
+      object-fit: contain;
+      border-radius: 18px;
+      filter: grayscale(1);
+      transition: .4s; }
+      #Portfolio .portfolio img:hover {
+        filter: grayscale(0); }
+
+#Working {
+  background-image: url(../img/image.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 400px; }
+  #Working .working_title {
+    text-align: center;
+    margin: auto;
+    padding-top: 150px; }
+    #Working .working_title h1 {
+      color: #f8f8f8;
+      font-size: 2.5rem;
+      font-weight: 700; }
+    #Working .working_title a {
+      padding: 15px 30px;
+      background-color: #ad0606;
+      color: #f8f8f8;
+      text-decoration: none;
+      border-radius: 4px;
+      margin-top: 30px;
+      transition: .4s ease all; }
+      #Working .working_title a:hover {
+        background-color: #220505; }
+
+#Speak {
+  width: 100%;
+  height: auto;
+  background-color: #f8f9f8;
+  padding-bottom: 100px; }
+  #Speak .speak-title {
+    text-align: center;
+    margin: auto; }
+    #Speak .speak-title h4 {
+      color: #000;
+      font-weight: 400;
+      font-size: 1.2rem;
+      margin: auto;
+      padding-top: 30px; }
+    #Speak .speak-title h1 {
+      color: #000000;
+      font-size: 2.5rem;
+      font-weight: 700; }
+  #Speak .speak {
+    width: 100%;
+    height: 420px;
+    background-color: #1b1b1b;
+    border-radius: 25px;
+    box-shadow: 5px 31px 36px 30px rgba(59, 61, 63, 0.25);
+    text-align: center; }
+    #Speak .speak .speak-client {
+      padding: 40px 120px;
+      margin: auto; }
+      #Speak .speak .speak-client i {
+        font-size: 36px;
+        color: #ad0606;
+        padding-top: 40px; }
+      #Speak .speak .speak-client p {
+        color: #f8f8f8;
+        font-size: 1.2rem;
+        font-weight: 300; }
+      #Speak .speak .speak-client img {
+        border-radius: 100%;
+        border: 4px solid #f8f9f8; }
+      #Speak .speak .speak-client h4 {
+        color: #f8f9f8;
+        font-weight: 400;
+        font-size: 1rem; }
+      #Speak .speak .speak-client span {
+        color: #dee3e4;
+        font-weight: 300;
+        font-size: 0.8rem; }
+
+#Footer {
+  background-color: #ad0606;
+  width: 100%;
+  height: 650px; }
+  #Footer .footer {
+    padding-top: 50px;
+    display: flex;
+    align-items: center; }
+    #Footer .footer .footer-title {
+      border-right: 3px solid #000000; }
+      #Footer .footer .footer-title h1 {
+        color: #000000;
+        font-size: 2.5rem;
+        font-weight: 700; }
+      #Footer .footer .footer-title p {
+        color: #000;
+        font-size: 1.2rem;
+        font-weight: 300; }
+      #Footer .footer .footer-title .info-me {
+        display: flex;
+        align-items: center; }
+        #Footer .footer .footer-title .info-me img {
+          max-width: 45%;
+          height: auto;
+          border: 2px solid #000;
+          border-radius: 50%;
+          box-shadow: 9px 30px 20px 25px rgba(0, 0, 0, 0.3); }
+        #Footer .footer .footer-title .info-me .icon {
+          margin-left: 60px; }
+          #Footer .footer .footer-title .info-me .icon span {
+            color: #000;
+            font-weight: 400;
+            font-size: 1rem;
+            margin-left: 15px;
+            font-family: 'Poppins', sans-serif; }
+          #Footer .footer .footer-title .info-me .icon i {
+            font-size: 30px;
+            padding: 10px 0px; }
+          #Footer .footer .footer-title .info-me .icon .social i {
+            color: #ffffff;
+            font-size: 20px;
+            border: 3px solid #000;
+            border-radius: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            transition: .4s; }
+            #Footer .footer .footer-title .info-me .icon .social i:hover {
+              color: #000;
+              transform: translateY(-20%); }
+    #Footer .footer .form {
+      margin-left: 60px;
+      border-left: 3px solid #000000; }
+      #Footer .footer .form .form-group {
+        padding: 25px 0px;
+        margin-left: 40px; }
+      #Footer .footer .form h1 {
+        color: #000;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 37px; }
+      #Footer .footer .form label {
+        margin-top: 30px;
+        color: #f8f8f8;
+        font-size: 1.2rem;
+        font-weight: 400; }
+      #Footer .footer .form input {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+        font-size: 30px;
+        padding-top: 30px;
+        color: black;
+        padding: 0px 60px;
+        outline: none; }
+      #Footer .footer .form textarea {
+        display: flex;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+        border-radius: 0px;
+        padding-top: 30px;
+        color: black;
+        font-size: 20px;
+        padding: 0px 78px;
+        outline: none; }
+      #Footer .footer .form a {
+        padding: 15px 60px;
+        background-color: #000000;
+        color: #f8f8f8;
+        text-decoration: none;
+        border-radius: 4px;
+        margin-top: 40px;
+        margin-left: 40px;
+        transition: .4s ease all; }
+        #Footer .footer .form a:hover {
+          background-color: #f8f8f8;
+          color: #000; }
+          #Footer .footer .form a:hover i {
+            color: #000000; }
+        #Footer .footer .form a i {
+          margin-left: 10px; }
+
+#Footer-end {
+  background-color: #000000;
+  width: 100%;
+  height: auto; }
+  #Footer-end .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
+    padding-top: 50px; }
+    #Footer-end .copyright h2 {
+      color: #f8f8f8;
+      font-weight: 400;
+      font-size: 1rem; }
+    #Footer-end .copyright span {
+      color: #ad0606;
+      font-weight: 400;
+      font-size: 1rem; }
+    #Footer-end .copyright .right {
+      text-align: end; }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .my-page {
+    flex-direction: column-reverse; }
+    .my-page .title {
+      width: 100%;
+      text-align: center; }
+      .my-page .title .typing-demo {
+        font-size: 3.6rem; }
+      .my-page .title .my-btn {
+        display: flex;
+        align-items: center;
+        width: 370px; } }
 
 /*# sourceMappingURL=style.css.map */
